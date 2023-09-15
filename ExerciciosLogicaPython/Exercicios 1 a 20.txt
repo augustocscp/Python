@@ -1,0 +1,133 @@
+print('Olá, mundo!')
+
+
+002
+nome = input('Qual o seu nome? ')
+print('É um prazer te conhecer,', nome, '!')
+
+005
+numero = input('Digite um número? ')
+n1 = (int(numero) - 1)
+n2 = (int(numero) + 1)
+print('O número digitado é {}, seu antecessor é {} e o sucessor é {}!'.format(numero,n1,n2))
+
+006
+num = int(input('Digite um número: '))
+dobro = num * 2
+triplo = num * 3
+raiz = num ** (1/2)
+print('O numero digitado foi {} \nSeu dobro é {} \nSeu triplo {} \nSua raiz quadrada {:.2f}'.format(num,dobro,triplo,raiz))
+
+
+007
+n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+n3 = (n1 + n2) / 2
+print('A média do aluno foi: {}'.format(n3))
+
+008
+metro = float(input('Digite a metragem desejada: '))
+cm = metro * 100
+mm = metro * 1000
+print('{} metro(s), equivale à: {} centimentros ou {} milimetros.'.format(metro,cm,mm))
+
+
+009
+print('==========Tabuada==========')
+num = int(input('Digite o número que deseja ter a tabuada: '))
+num2 = num * 2
+num3 = num * 3
+num4 = num * 4
+num5 = num * 5
+num6 = num * 6
+num7 = num * 7
+num8 = num * 8
+num9 = num * 9
+num10 = num * 10
+print('{} *  1 =  {}'.format(num,num))
+print('{} *  2 = {}'.format(num,num2))
+print('{} *  3 = {}'.format(num,num3))
+print('{} *  4 = {}'.format(num,num4))
+print('{} *  5 = {}'.format(num,num5))
+print('{} *  6 = {}'.format(num,num6))
+print('{} *  7 = {}'.format(num,num7))
+print('{} *  8 = {}'.format(num,num8))
+print('{} *  9 = {}'.format(num,num9))
+print('{} * 10 = {}'.format(num,num10))
+
+
+010
+print('=====CONVERSOR DE MOEDA=====')
+real = float(input('Quanto você tem em real para converter? '))
+dolar = real / 3.27
+print('Com o valor de {} reais é possível adquírir {:.2f} dolares'.format(real,dolar))
+
+
+
+011
+print('='*33)
+print('   Calculadora de tinta por m²')
+print('='*33)
+l = float(input('Qual a largura da parede? '))
+c = float(input('Qual o comprimento da parede? '))
+m2 = l * c
+t = m2 / 2
+print('Você possui uma parede de {} m². Para pintar essa quantidade de m² é necessario {} litros de tinta.'.format(m2,t))
+
+012
+vp = float(input('Qual o valor do produto? '))
+nv = vp - (vp * 0.05)
+print('Valor do produto {} \nCom 5% de desconto, vai custar {}'.format(vp,nv))
+
+013
+sal = float(input('Qual o salário do funcionário? '))
+nsal = sal + (sal * 0.15)
+print('O novo salário do funcionário, com reajuste de 15%, ficará R${}'.format(nsal))
+
+
+016
+import math
+n = float(input('Digite um numero: '))
+p = math.trunc(n)
+print('O numero digitado foi {} e o seu valor inteiro é {}'.format(n,p))
+
+
+
+017
+import math
+a = float(input('Qual o valor primeiro cateto? '))
+b = float(input('Qual o valor do segundo cateto? '))
+# tbm pode ser feito dessa forma - d = math.hypot(a, b)
+c = math.pow(a,2) + math.pow(b,2)
+d = math.sqrt(c)
+print('A hipotenusa do triangulo redondo é: {}'.format(d))
+
+
+
+
+019
+import random
+
+a1 = input('Digite o nome do primeiro aluno: ')
+a2 = input('Digite o nome do segundo aluno: ')
+a3 = input('Digite o nome do terceiro aluno: ')
+a4 = input('Digite o nome do quarto aluno: ')
+Lista = (a1,a2,a3,a4)
+sorteio = random.choice(Lista)
+print('O sorteado para apagar o quadro é o {}'.format(sorteio) )
+
+
+
+
+020
+import pygame
+
+
+a1 = input('Digite o nome do primeiro aluno: ')
+a2 = input('Digite o nome do segundo aluno: ')
+a3 = input('Digite o nome de terceiro aluno: ')
+a4 = input('Digite o nome do quarto aluno: ')
+
+alunos = (a1,a2,a3,a4)
+ordem = random.sample(alunos,4)
+print('A ordem de apresentação dos trabalhos será {}'.format(ordem))
