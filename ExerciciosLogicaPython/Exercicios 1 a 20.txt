@@ -107,7 +107,6 @@ print('A hipotenusa do triangulo redondo é: {}'.format(d))
 
 019
 import random
-
 a1 = input('Digite o nome do primeiro aluno: ')
 a2 = input('Digite o nome do segundo aluno: ')
 a3 = input('Digite o nome do terceiro aluno: ')
@@ -121,8 +120,6 @@ print('O sorteado para apagar o quadro é o {}'.format(sorteio) )
 
 020
 import pygame
-
-
 a1 = input('Digite o nome do primeiro aluno: ')
 a2 = input('Digite o nome do segundo aluno: ')
 a3 = input('Digite o nome de terceiro aluno: ')
